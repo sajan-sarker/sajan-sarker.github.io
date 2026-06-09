@@ -1,0 +1,319 @@
+{
+  "meta": {
+    "title": "Sajan Kumer Sarker | AI & Cybersecurity Researcher",
+    "heroChip": "AI • Cybersecurity",
+    "name": "Sajan Kumer Sarker",
+    "tagline": "Machine Learning | Deep Learning | LLMs | NLP | Cybersecurity",
+    "bio": "Computer Science graduate and AI researcher specializing in machine learning, deep learning, large language models, and AI-driven cybersecurity. Passionate about building intelligent and secure systems through research and practical applications."
+  },
+  "social": [
+    { "label": "Facebook",   "href": "https://facebook.com/sajan.k.sarker",      "icon": "fab fa-facebook" },
+    { "label": "Instagram",  "href": "https://instagram.com/sajan_sarker",        "icon": "fab fa-instagram" },
+    { "label": "Twitter",    "href": "https://twitter.com/sajan_sarker3",         "icon": "fab fa-x-twitter" },
+    { "label": "LinkedIn",   "href": "https://linkedin.com/in/sajan-sarker",      "icon": "fab fa-linkedin" },
+    { "label": "GitHub",     "href": "https://github.com/sajan-sarker",           "icon": "fab fa-github" },
+    { "label": "TryHackMe",  "href": "https://tryhackme.com/p/sajan.k.sarker",   "icon": "fa-solid fa-shield-halved" },
+    { "label": "Resume",     "href": "https://drive.google.com/file/d/1UnpZSdncwHlOQD4oTsqZDAONi8c7qql4/view?usp=sharing", "icon": "fa-solid fa-file-lines" }
+  ],
+  "heroButtons": [
+    { "text": "View Projects", "href": "#projects", "variant": "primary" },
+    { "text": "Let's Talk",    "href": "#contact",  "variant": "secondary" }
+  ],
+  "about": {
+    "paragraphs": [
+      "Computer Science and Engineering graduate from North South University with research and project experience in Machine Learning, Deep Learning, Natural Language Processing, Large Language Models, and Cybersecurity.",
+      "Currently working as a Research Intern at Elite Research Lab LLC, contributing to AI and cybersecurity research projects involving LLMs, structured reasoning systems, model evaluation, and security-focused AI applications. My long-term goal is to work at the intersection of Artificial Intelligence and Cybersecurity as a researcher."
+    ]
+  },
+  "experience": [
+    {
+      "role": "Research Intern (Part-time)",
+      "company": "Elite Research Lab LLC",
+      "period": "June 2026 – Present",
+      "description": "Conducting research on machine learning, deep learning, large language models, and AI-driven cybersecurity systems. Contributing to structured reasoning workflows, experimentation, model evaluation, technical documentation, and security-focused AI research.",
+      "tags": [
+        "Machine Learning",
+        "Deep Learning",
+        "LLMs",
+        "NLP",
+        "Cybersecurity",
+        "Python",
+        "Research"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Computer Science and Engineering",
+      "institution": "North South University, Dhaka, Bangladesh",
+      "period": "February 2021 – September 2025",
+      "grade": "CGPA: 3.04 / 4.00",
+      "extra": "Relevant coursework: Data Structures and Algorithms, Software Engineering, Advanced Database, Machine Learning, Deep Learning."
+    },
+    {
+      "degree": "Higher Secondary Certificate (HSC)",
+      "institution": "Nawab Habibullah Model School and College",
+      "period": "May 2017 – July 2019",
+      "grade": "GPA: 4.67 / 5.00",
+      "extra": "Group: Science"
+    },
+    {
+      "degree": "Secondary School Certificate (SSC)",
+      "institution": "Baunia Abdul Jalil High School",
+      "period": "January 2015 – March 2017",
+      "grade": "GPA: 4.68 / 5.00",
+      "extra": "Group: Science"
+    }
+  ],
+  "projects": [
+    {
+      "title": "CyberSec-Reasoner – A Three-Stage Post-Trained Reasoning LLM for Vulnerability Analysis",
+      "bullets": [
+        "Engineered a domain-specialized LLM based on Qwen 3.5 (4B) designed to perform explicit Chain-of-Thought (CoT) reasoning for cybersecurity tasks, such as automated CVE-to-CWE mapping.",
+        "Architected a three-stage post-training pipeline featuring Knowledge-Based SFT for domain expertise, Cold Start SFT for reasoning structure, and Reinforcement Learning via Group Relative Policy Optimization (GRPO) for logical refinement.",
+        "Developed a weighted hybrid reward system (Total Reward = 0.5 · Rcwe + 0.3 · Rformat + 0.2 · Rkeyword) to optimize for classification accuracy and semantic grounding, validating the model against a 1,000-sample CVE/CWE dataset using custom rule-based metrics."
+      ],
+      "tools": ["PyTorch", "Transformers", "TRL", "Hugging Face PEFT", "LoRA", "QLoRA", "GRPO", "Qwen 3.5", "Wandb"],
+      "links": [
+        { "label": "GitHub Repository",      "href": "https://github.com/sajan-sarker/CyberSec-Reasoner" },
+        { "label": "Hugging Face Repository","href": "https://huggingface.co/sajan-sarker/Qwen3.5-4B-LoRA-GRPO-CyberSec-Reasoner" }
+      ]
+    },
+    {
+      "title": "SPIRICHAT - RAG-Based Q&A Chatbot",
+      "bullets": [
+        "Developed an RAG-based chatbot system focused on answering questions about supernatural topics (e.g., ghosts, demons, vampires) by retrieving relevant context from uploaded documents and generating natural language responses using OpenAI GPT-3.5 API.",
+        "Designed the backend using Flask to handle document ingestion, context cleaning, embedding generation via Hugging Face models, vector storage with Pinecone, and response generation through LangChain.",
+        "Built a responsive, full-screen chat interface using HTML, CSS, and JavaScript, supporting dynamic user interactions, context-aware replies, and persistent chat history across sessions."
+      ],
+      "tools": ["LangChain", "Generative AI", "OpenAI API", "Hugging Face", "Pinecone"],
+      "links": [
+        { "label": "GitHub Repository", "href": "https://github.com/sajan-sarker/Spirichat" }
+      ]
+    },
+    {
+      "title": "Drone Human Detection & Counting System – YOLO26-OBB + BoT-SORT Aerial Analytics Pipeline",
+      "bullets": [
+        "Designed and implemented an end-to-end aerial computer vision pipeline using YOLO26l-OBB fine-tuned on the VisDrone2019-DET dataset for drone imagery.",
+        "Engineered a full data preprocessing and training workflow including HBB→OBB conversion, coordinate clipping, class remapping, etc.",
+        "Integrated BoT-SORT multi-object tracking for unique whole-video human counting, implemented per-image and per-video counting modules."
+      ],
+      "tools": ["Python", "PyTorch", "YOLO26-OBB", "BoT-SORT", "OpenCV", "Supervision"],
+      "links": [
+        { "label": "GitHub Repository", "href": "https://github.com/sajan-sarker/drone-human-detection-and-counting-system" }
+      ]
+    },
+    {
+      "title": "Multi-lingual YouTube Comment Sentiment & Type Analysis",
+      "bullets": [
+        "Designed and implemented a complete multilingual NLP pipeline centered on XLM-RoBERTa for sentiment and comment-type classification across Bangla, English, and Romanized Bangla.",
+        "Automated dataset creation using YouTube Data API and LLM-based labeling (Qwen2.5-14B) via prompt-driven JSON extraction, eliminating manual annotation.",
+        "Trained and evaluated multiple models including TF-IDF + MLP, LSTM/BiLSTM, and XLM-RoBERTa, achieving up to 76.68% sentiment and 76.05% type accuracy on test data.",
+        "Developed a FastAPI-based backend with REST endpoints and a web UI to analyze single comments or entire videos, with automated plots, and confidence visualizations."
+      ],
+      "tools": ["Scikit-learn", "PyTorch", "Hugging Face Transformers", "FastAPI", "PostgreSQL", "Postman"],
+      "links": [
+        { "label": "GitHub Repository", "href": "https://github.com/sajan-sarker/Youtube_Comment_Sentiments_-_Type_Analysis" }
+      ]
+    },
+    {
+      "title": "An Explainable Approach for Network Intrusion Detection Using Machine Learning and Deep Neural Network [BSc Thesis]",
+      "bullets": [
+        "Built a weighted ensemble model for robust classification, integrating SHAP and LIME for explainability.",
+        "Analyzed the impact of synthetic data on network attack classification performance.",
+        "Achieved 97.26% accuracy on a multi-class classification task with a low false positive rate of 0.0048."
+      ],
+      "tools": ["Machine Learning", "Data Analysis", "Scikit-learn", "Explainable AI", "PyTorch"],
+      "links": [
+        { "label": "GitHub Repository", "href": "https://github.com/sajan-sarker/web-attack-detection" }
+      ]
+    },
+    {
+      "title": "Pre-trained Transformers for Java-Python Code Translation [BSc Direct Research]",
+      "bullets": [
+        "Designed a 2-step Java-to-Python code translation pipeline using CodeT5 for initial translation and PLBART for correction and minimization.",
+        "Fine-tuned CodeT5 and PLBART models to improve syntactic and semantic accuracy in cross-language code generation.",
+        "Achieved BLEU score of 51.72 and CodeBLEU of 0.4913 with CodeT5; PLBART refinement step scored 28.92 BLEU and 0.3327 CodeBLEU."
+      ],
+      "tools": ["PyTorch", "Hugging Face Transformers", "NLP"],
+      "links": [
+        { "label": "GitHub Repository", "href": "https://github.com/sajan-sarker/java-python-code-translation" }
+      ]
+    },
+    {
+      "title": "Bone Fracture Classification Using Deep Learning",
+      "bullets": [
+        "Fine-tuned two pre-trained deep learning models—EfficientNet-B0 and VGG16—for binary classification of bone X-ray images into Fractured and Not Fractured.",
+        "Conducted performance evaluation using classification metrics, with EfficientNet-B0 achieving 99.21% accuracy, outperforming VGG16."
+      ],
+      "tools": ["PyTorch", "Transfer Learning", "Deep Learning"],
+      "links": [
+        { "label": "GitHub Repository", "href": "https://github.com/sajan-sarker/bone-fracture-classifications" }
+      ]
+    },
+    {
+      "title": "Malicious URL Classification with Machine Learning",
+      "bullets": [
+        "Developed a machine learning-based classifier to identify and categorize malicious URLs.",
+        "Implemented multiple traditional ML models including Decision Tree, Random Forest, XGBoost, CatBoost, KNN, and a Voting Classifier.",
+        "Performed URL-based feature extraction, feature engineering, and hyperparameter tuning, achieving a highest accuracy of 93.80%."
+      ],
+      "tools": ["Scikit-learn", "Data Analysis", "Machine Learning"],
+      "links": [
+        { "label": "GitHub Repository", "href": "https://github.com/sajan-sarker/Malicious_URL_Classification" }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming",
+      "groups": [
+        {
+          "label": "Languages",
+          "tags": [
+            "Python",
+            "Java",
+            "C/C++",
+            "JavaScript",
+            "PHP",
+            "SQL",
+            "HTML/CSS"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Libraries & Frameworks",
+      "groups": [
+        {
+          "label": "AI & Development",
+          "tags": [
+            "Scikit-learn",
+            "TensorFlow",
+            "PyTorch",
+            "OpenCV",
+            "Transformers",
+            "LangChain",
+            "FastAPI"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Platforms & Databases",
+      "groups": [
+        {
+          "label": "Platforms",
+          "tags": [
+            "GitHub",
+            "Google Colab",
+            "Jupyter Notebook",
+            "Kaggle",
+            "MySQL",
+            "PostgreSQL",
+            "Wandb",
+            "Linux",
+            "Windows"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Tools",
+      "groups": [
+        {
+          "label": "Development Tools",
+          "tags": [
+            "Git",
+            "GitHub",
+            "VS Code",
+            "PyCharm",
+            "Postman",
+            "LaTeX",
+            "MS Office",
+            "Figma"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Concepts",
+      "groups": [
+        {
+          "label": "Core Areas",
+          "tags": [
+            "Machine Learning",
+            "Deep Learning",
+            "NLP",
+            "LLMs",
+            "Generative AI",
+            "Agentic AI",
+            "Prompt Engineering",
+            "OOP",
+            "Offensive Security",
+            "Defensive Security",
+            "Troubleshooting",
+            "Debugging"
+          ]
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Pre Security Learning Path",
+      "img": "/sajan-sarker/img/THM-Pre Security Certificate.jpg",
+      "credentialUrl": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-4AIUKNP9RF.pdf"
+    },
+    {
+      "title": "Google Cloud Gen AI Academy APAC Edition (Cohort 1)",
+      "img": "/sajan-sarker/img/Google Cloud Gen AI Academy APAC Edition (Cohort 1).jpg",
+      "credentialUrl": "https://certificate.hack2skill.com/verify/2026H2S04GCGENAIAPACC1-P01483"
+    },
+    {
+      "title": "Associate AI Engineer for Developers",
+      "img": "/sajan-sarker/img/Associate AI Engineer for Developers Certificate.jpg",
+      "credentialUrl": "https://www.datacamp.com/completed/statement-of-accomplishment/track/acb8e446250a6fde9754bde933b685a67aa2c000"
+    },
+    {
+      "title": "Google IT Automation with Python",
+      "img": "/sajan-sarker/img/Google IT Automation with Python Professional Certificate.jpg",
+      "credentialUrl": "https://coursera.org/verify/professional-cert/JXMDH70DB3CK"
+    },
+    {
+      "title": "Google AI Essentials",
+      "img": "/sajan-sarker/img/Google AI Essentials Certificate.jpg",
+      "credentialUrl": "https://coursera.org/verify/QJEPIF5AN4VM"
+    },
+    {
+      "title": "Meta Programming in Python",
+      "img": "/sajan-sarker/img/Meta Programming in Python Certificate.jpg",
+      "credentialUrl": "https://coursera.org/verify/JDG6VDMSFU5L"
+    },
+    {
+      "title": "DeepLearning.AI ML Specialization",
+      "img": "/sajan-sarker/img/DeepLearning.AI Machine Learning Specialization Coursera Certificate.jpg",
+      "credentialUrl": "https://coursera.org/verify/specialization/C189OYW5JJRW"
+    },
+    {
+      "title": "CS50's Introduction to Programming with Python",
+      "img": "/sajan-sarker/img/CS50 Introduction to Programming with Python Certificate.png",
+      "credentialUrl": "https://cs50.harvard.edu/certificates/f08d8bc1-b76e-47d9-a2c6-776264d9cc65"
+    },
+    {
+      "title": "Stanford University's Code in Place",
+      "img": "/sajan-sarker/img/Stanford University Code in Place Certificate.jpg",
+      "credentialUrl": "https://codeinplace.stanford.edu/cip4/certificate/11gxkv"
+    }
+  ],
+  "contact": {
+    "intro": "Interested in AI, Machine Learning, LLM, Cybersecurity, or research collaborations?",
+    "subIntro": "Let's connect.",
+    "email": "sajan.k.sarker@gmail.com",
+    "phone": "+880 1722-425426",
+    "location": "Uttara, Dhaka, Bangladesh"
+  },
+  "footer": {
+    "text": "© 2026 Sajan Kumer Sarker. All rights reserved."
+  }
+}
