@@ -200,18 +200,18 @@
       ]
     },
     {
-      "category": "Platforms & Databases",
+      "category": "Platforms",
       "groups": [
         {
-          "label": "Platforms",
+          "label": "Development Platforms",
           "tags": [
-            "GitHub",
             "Google Colab",
             "Jupyter Notebook",
             "Kaggle",
             "MySQL",
             "PostgreSQL",
-            "Wandb",
+            "Weights & Biases (Wandb)",
+            "Roboflow",
             "Linux",
             "Windows"
           ]
@@ -227,11 +227,29 @@
             "Git",
             "GitHub",
             "VS Code",
+            "Code::Blocks",
             "PyCharm",
             "Postman",
             "LaTeX",
             "MS Office",
             "Figma"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Networking & Cybersecurity",
+      "groups": [
+        {
+          "label": "Networking & Security Concepts",
+          "tags": [
+            "TCP/IP",
+            "HTTP/HTTPS",
+            "DNS",
+            "DHCP",
+            "SSH",
+            "OSI MODEL",
+            "CVE/CWE"
           ]
         }
       ]
