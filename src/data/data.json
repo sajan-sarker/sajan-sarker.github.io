@@ -13,7 +13,7 @@
     { "label": "LinkedIn",   "href": "https://linkedin.com/in/sajan-sarker",      "icon": "fab fa-linkedin" },
     { "label": "GitHub",     "href": "https://github.com/sajan-sarker",           "icon": "fab fa-github" },
     { "label": "TryHackMe",  "href": "https://tryhackme.com/p/sajan.k.sarker",   "icon": "fa-solid fa-shield-halved" },
-    { "label": "Resume",     "href": "https://drive.google.com/file/d/1RQPIx8zyRpi2qJL4LImpVIJ9IEWDSM0w/view?usp=sharing", "icon": "fa-solid fa-file-lines" }
+    { "label": "Resume",     "href": "https://sajansarker.me/my_resume/Sajan_Kumer_Sarker.pdf", "icon": "fa-solid fa-file-lines" }
   ],
   "heroButtons": [
     { "text": "View Projects", "href": "#projects", "variant": "primary" },
@@ -21,14 +21,28 @@
   ],
   "about": {
     "paragraphs": [
-      "Computer Science and Engineering graduate from North South University with research and project experience in Machine Learning, Deep Learning, Natural Language Processing, Large Language Models, and Cybersecurity.",
-      "Currently working as a Research Intern at Elite Research Lab LLC, contributing to AI and cybersecurity research projects involving LLMs, structured reasoning systems, model evaluation, and security-focused AI applications. My long-term goal is to work at the intersection of Artificial Intelligence and Cybersecurity as a researcher."
+      "I'm a Computer Science and Engineering graduate with internship experience in AI research and fintech, with a growing interest in Artificial Intelligence and Cybersecurity, particularly at their intersection. Currently contributing to research on multi-agent systems for secure microservice code generation, vulnerability detection, and remediation, while gaining industry experience working with data and AI models in the fintech domain.",
+      "I'm passionate about building intelligent, secure systems and exploring applications of Machine Learning and Large Language Models (LLMs) in real-world scenarios. Currently expanding my knowledge in AI-driven security, Automation System, and Agentic systems through hands-on practice and online learning."
     ]
   },
   "experience": [
     {
+      "role": "N-Risers Intern – Business Assurance Department",
+      "company": "Nagad Ltd - Dhaka, Bangladesh",
+      "period": "August 2026 – Present",
+      "description": "Working with Scala and Python languages for data analysis, experimentation, and data-driven business applications. Applying AI models to automate manual processes and support operational tasks within the fintech domain.",
+      "tags": [
+        "Data Analysis",
+        "Machine Learning",
+        "Deep Learning",
+        "LLMs",
+        "Data Security & Privacy",
+        "Python"
+      ]
+    },
+    {
       "role": "Research Intern (Part-time)",
-      "company": "Elite Research Lab LLC",
+      "company": "Elite Research Lab LLC - Remote (USA)",
       "period": "June 2026 – Present",
       "description": "Conducting research on machine learning, deep learning, large language models, and AI-driven cybersecurity systems. Contributing to structured reasoning workflows, experimentation, model evaluation, technical documentation, and security-focused AI research.",
       "tags": [
@@ -277,50 +291,77 @@
       ]
     }
   ],
+  "activities": [
+    {
+      "title": "Participant, Aspire Leaders Program",
+      "organization": "Aspire Institute",
+      "period": "July 2026 – Present",
+      "bullets": [
+        "Selected for a global leadership development program.",
+        "Developing leadership, communication, networking, and career skills."
+      ]
+    },
+    {
+      "title": "Participant, ML Summer School 2026",
+      "organization": "Cohere Labs",
+      "period": "July 2026 – August 2026",
+      "bullets": [
+        "Participated in 12 sessions, gaining practical exposure to modern ML, LLMs, AI agents, and ML research"
+      ],
+      "links": [
+        { "label": "Credential",      "href": "https://credsverse.com/credentials/86e12f37-0cf5-41dd-af6c-59d8a5094a7e" }
+      ]
+    }
+  ],
   "certifications": [
     {
       "title": "Pre Security Learning Path",
-      "img": "/sajan-sarker/img/THM-Pre Security Certificate.jpg",
+      "img": "/img/THM-Pre Security Certificate.jpg",
       "credentialUrl": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-4AIUKNP9RF.pdf"
     },
     {
       "title": "Google Cloud Gen AI Academy APAC Edition (Cohort 1)",
-      "img": "/sajan-sarker/img/Google Cloud Gen AI Academy APAC Edition (Cohort 1).jpg",
+      "img": "/img/Google Cloud Gen AI Academy APAC Edition (Cohort 1).jpg",
       "credentialUrl": "https://certificate.hack2skill.com/verify/2026H2S04GCGENAIAPACC1-P01483"
     },
     {
+      "title": "Google Cloud Gen AI Academy APAC Edition (Cohort 2)",
+      "img": "/img/Google Cloud Gen AI Academy APAC Edition (Cohort 2).jpg",
+      "credentialUrl": "https://certificate.hack2skill.com/verify/2026H2S07GCGENAIAPACC2-P01556"
+    },
+    {
       "title": "Associate AI Engineer for Developers",
-      "img": "/sajan-sarker/img/Associate AI Engineer for Developers Certificate.jpg",
+      "img": "/img/Associate AI Engineer for Developers Certificate.jpg",
       "credentialUrl": "https://www.datacamp.com/completed/statement-of-accomplishment/track/acb8e446250a6fde9754bde933b685a67aa2c000"
     },
     {
       "title": "Google IT Automation with Python",
-      "img": "/sajan-sarker/img/Google IT Automation with Python Professional Certificate.jpg",
+      "img": "/img/Google IT Automation with Python Professional Certificate.jpg",
       "credentialUrl": "https://coursera.org/verify/professional-cert/JXMDH70DB3CK"
     },
     {
       "title": "Google AI Essentials",
-      "img": "/sajan-sarker/img/Google AI Essentials Certificate.jpg",
+      "img": "/img/Google AI Essentials Certificate.jpg",
       "credentialUrl": "https://coursera.org/verify/QJEPIF5AN4VM"
     },
     {
       "title": "Meta Programming in Python",
-      "img": "/sajan-sarker/img/Meta Programming in Python Certificate.jpg",
+      "img": "/img/Meta Programming in Python Certificate.jpg",
       "credentialUrl": "https://coursera.org/verify/JDG6VDMSFU5L"
     },
     {
       "title": "DeepLearning.AI ML Specialization",
-      "img": "/sajan-sarker/img/DeepLearning.AI Machine Learning Specialization Coursera Certificate.jpg",
+      "img": "/img/DeepLearning.AI Machine Learning Specialization Coursera Certificate.jpg",
       "credentialUrl": "https://coursera.org/verify/specialization/C189OYW5JJRW"
     },
     {
       "title": "CS50's Introduction to Programming with Python",
-      "img": "/sajan-sarker/img/CS50 Introduction to Programming with Python Certificate.png",
+      "img": "/img/CS50 Introduction to Programming with Python Certificate.png",
       "credentialUrl": "https://cs50.harvard.edu/certificates/f08d8bc1-b76e-47d9-a2c6-776264d9cc65"
     },
     {
       "title": "Stanford University's Code in Place",
-      "img": "/sajan-sarker/img/Stanford University Code in Place Certificate.jpg",
+      "img": "/img/Stanford University Code in Place Certificate.jpg",
       "credentialUrl": "https://codeinplace.stanford.edu/cip4/certificate/11gxkv"
     }
   ],
