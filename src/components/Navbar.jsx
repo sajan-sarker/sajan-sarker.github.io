@@ -8,6 +8,7 @@ const navSections = [
   { label: 'Education',    section: 'educations' },
   { label: 'Projects',     section: 'projects' },
   { label: 'Skills',       section: 'skills' },
+  { label: 'Activities',   section: 'activities' },
   { label: 'Certificates', section: 'certifications' },
   { label: 'Contact',      section: 'contact' },
 ];
