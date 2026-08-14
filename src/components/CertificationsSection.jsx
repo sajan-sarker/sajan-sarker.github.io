@@ -11,11 +11,7 @@ export default function CertificationsSection({ onImageClick }) {
           {certs.map((cert, index) => (
             <article
               key={index}
-              className={`card certificate-card reveal${
-                index === certs.length - 1 && certs.length % 3 === 1
-                  ? ' sm:col-span-2 lg:col-span-1'
-                  : ''
-              }`}
+              className="card certificate-card reveal"
             >
               <img
                 src={cert.img}
