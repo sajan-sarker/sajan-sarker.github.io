@@ -6,6 +6,7 @@ import ExperienceSection from './components/ExperienceSection';
 import EducationSection from './components/EducationSection';
 import ProjectsSection from './components/ProjectsSection';
 import SkillsSection from './components/SkillsSection';
+import ActivitiesSection from './components/ActivitiesSection';
 import CertificationsSection from './components/CertificationsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -32,6 +33,7 @@ export default function App() {
         <EducationSection />
         <ProjectsSection />
         <SkillsSection />
+        <ActivitiesSection />
         <CertificationsSection onImageClick={setModalSrc} />
         <ContactSection />
       </main>
