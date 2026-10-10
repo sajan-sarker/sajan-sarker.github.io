@@ -30,7 +30,7 @@
       "role": "N-Risers Intern – Business Assurance Department",
       "company": "Nagad Ltd - Dhaka, Bangladesh",
       "period": "August 2026 – Present",
-      "description": "Working with Scala and Python languages for data analysis, experimentation, and data-driven business applications. Applying AI models to automate manual processes and support operational tasks within the fintech domain.",
+      "description": "Analyze transactional data and build systems for fraud analysis, suspicious activity detection, and business intelligence. Develop AI-powered solutions with AI/LLMs, and computer vision to automate workflows and support business operations.",
       "tags": [
         "Data Analysis",
         "Machine Learning",
@@ -191,6 +191,7 @@
             "JavaScript",
             "PHP",
             "SQL",
+            "Cypher",
             "HTML/CSS"
           ]
         }
@@ -214,39 +215,35 @@
       ]
     },
     {
-      "category": "Platforms",
+      "category": "Databases",
       "groups": [
-        {
-          "label": "Development Platforms",
+        { 
+          "label": "Relational & Vector Databases",
           "tags": [
-            "Google Colab",
-            "Jupyter Notebook",
-            "Kaggle",
             "MySQL",
             "PostgreSQL",
-            "Weights & Biases (Wandb)",
-            "Roboflow",
-            "Linux",
-            "Windows"
+            "Neo4j",
+            "PuppyGraph",
+            "ChromaDB",
+            "Pinecone",
+            "Milvus"
           ]
         }
       ]
     },
     {
-      "category": "Tools",
+      "category": "Cloud & Infrastructure",
       "groups": [
         {
-          "label": "Development Tools",
+          "label": "Cloud Environments & Infrastructures",
           "tags": [
-            "Git",
-            "GitHub",
-            "VS Code",
-            "Code::Blocks",
-            "PyCharm",
-            "Postman",
-            "LaTeX",
-            "MS Office",
-            "Figma"
+            "Microsoft Azure", 
+            "Docker", 
+            "Virtual Machines", 
+            "Git", 
+            "GitHub", 
+            "Linux", 
+            "Windows"
           ]
         }
       ]
@@ -258,34 +255,63 @@
           "label": "Networking & Security Concepts",
           "tags": [
             "TCP/IP",
+            "UDP", 
             "HTTP/HTTPS",
             "DNS",
             "DHCP",
             "SSH",
             "OSI MODEL",
-            "CVE/CWE"
+            "CVE/CWE",
+            "Offensive Security",
+            "Defensive Security"
           ]
         }
       ]
     },
     {
-      "category": "Concepts",
+      "category": "Tools",
+      "groups": [
+        {
+          "label": "Development Tools",
+          "tags": [
+            "Weights & Biases (W&B)", 
+            "Postman", 
+            "LATEX", 
+            "Claude Code", 
+            "Wireshark"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Core Concepts",
       "groups": [
         {
           "label": "Core Areas",
           "tags": [
-            "Machine Learning",
-            "Deep Learning",
-            "NLP",
-            "LLMs",
-            "Generative AI",
-            "Agentic AI",
-            "Prompt Engineering",
-            "OOP",
-            "Offensive Security",
-            "Defensive Security",
-            "Troubleshooting",
-            "Debugging"
+            "Object-Oriented Programming (OOP)",
+            "Debugging",
+            "Data Structures & Algorithms (DSA)"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "AI/ML & LLMs",
+      "groups": [
+        {
+          "label": "AI/ML & LLMs Concepts",
+          "tags": [
+            "Machine Learning", 
+            "Deep Learning", 
+            "Large Language Models", 
+            "Generative AI", 
+            "Agentic AI", 
+            "Computer Vision", 
+            "Graph Neural Networks", 
+            "Model Quantization", 
+            "Reinforcement Learning", 
+            "Prompt Engineering"
           ]
         }
       ]
@@ -293,12 +319,27 @@
   ],
   "activities": [
     {
+      "title": "Google Cloud Gen AI Academy APAC Edition",
+      "organization": "Hack2Skill $\times$ Google Cloud",
+      "period": "January 2026 – September 2026",
+      "bullets": [
+        "Participated in all three cohorts of the APAC GenAI Academy Learning Journey, gaining exposure to Generative AI concepts, tools, and practical applications."
+      ],
+      "links": [
+        { "label": "Cohort 1",      "href": "https://certificate.hack2skill.com/verify/2026H2S04GCGENAIAPACC1-P01483" },
+        { "label": "Cohort 2",      "href": "https://certificate.hack2skill.com/verify/2026H2S07GCGENAIAPACC2-P01556" },
+        { "label": "Cohort 3",      "href": "https://certificate.hack2skill.com/verify/2026H2S09GCGENAIAPACC3-P00469" }
+      ]
+    },
+    {
       "title": "Participant, Aspire Leaders Program",
       "organization": "Aspire Institute",
-      "period": "July 2026 – Present",
+      "period": "July 2026 – September 2026",
       "bullets": [
-        "Selected for a global leadership development program.",
-        "Developing leadership, communication, networking, and career skills."
+        "Completed a global learning experience focused on leadership development, professional growth, and participated in workshops, mentorship sessions, and collaborative projects with peers from diverse backgrounds."
+      ],
+      "links": [
+        { "label": "Credential",      "href": "https://github.com/sajan-sarker/sajan-sarker.github.io/blob/main/public/img/Aspire-Certificate.png?raw=true" }
       ]
     },
     {
@@ -328,6 +369,11 @@
       "title": "Google Cloud Gen AI Academy APAC Edition (Cohort 2)",
       "img": "/img/Google Cloud Gen AI Academy APAC Edition (Cohort 2).jpg",
       "credentialUrl": "https://certificate.hack2skill.com/verify/2026H2S07GCGENAIAPACC2-P01556"
+    },
+    {
+      "title": "Google Cloud Gen AI Academy APAC Edition (Cohort 3)",
+      "img": "/img/Google Cloud Gen AI Academy APAC Edition (Cohort 3).jpg",
+      "credentialUrl": "https://certificate.hack2skill.com/verify/2026H2S09GCGENAIAPACC3-P00469"
     },
     {
       "title": "Associate AI Engineer for Developers",
