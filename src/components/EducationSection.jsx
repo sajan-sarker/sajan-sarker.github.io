@@ -1,4 +1,5 @@
 import data from '../data/data.json';
+import SectionHeading from './SectionHeading';
 
 export default function EducationSection() {
   const educations = data.education;
@@ -6,15 +7,23 @@ export default function EducationSection() {
   return (
     <section id="educations" className="section-wrapper">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="section-heading">Education</h2>
-        <div className="grid gap-5 md:grid-cols-2">
+        <SectionHeading index={3} title="Education" comment="cat education.log" />
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
           {educations.map((edu, index) => (
-            <article key={index} className="card reveal">
-              <h3 className="card-title">{edu.degree}</h3>
-              <p>{edu.institution}</p>
-              <p>{edu.period}</p>
-              <p className="font-semibold text-slate-100">{edu.grade}</p>
-              <p>{edu.extra}</p>
+            <article key={edu.degree} className="edu-card glow-card reveal">
+              <div className="flex items-center justify-between gap-3 mb-4">
+                <span className="edu-icon">
+                  <i className={`fa-solid ${index === 0 ? 'fa-graduation-cap' : 'fa-school'}`} aria-hidden="true" />
+                </span>
+                <span className="edu-index">{`edu[${index}]`}</span>
+              </div>
+              <h3 className="edu-degree">{edu.degree}</h3>
+              <p className="edu-institution">{edu.institution}</p>
+              <p className="edu-period">
+                <i className="fa-regular fa-calendar" aria-hidden="true" /> {edu.period}
+              </p>
+              <span className="grade-badge">{edu.grade}</span>
+              {edu.extra && <p className="edu-extra">{edu.extra}</p>}
             </article>
           ))}
         </div>
