@@ -1,73 +1,77 @@
 import { useEffect } from 'react';
 
+const CARDS = '.glow-card';
+const CHIPS = '.tag, .project-link, .social-icon';
+const BUTTONS = '.btn-primary, .btn-secondary';
+const SELECTOR = [CARDS, CHIPS, BUTTONS].join(', ');
+
 /**
- * Attaches the cursor-glow mousemove/mouseleave handlers to all matching elements.
- * Exact port of the original script.js glowTargets logic.
+ * Cursor-following glow. Uses one delegated pointermove listener, and a
+ * MutationObserver so elements rendered later (e.g. "show all") also glow.
  */
 export function useCursorGlow() {
   useEffect(() => {
-    const selector = [
-      '.card',
-      '.content-card',
-      '.project-card',
-      '.project-card > a',
-      '.project-tech span',
-      '.skill-tags span',
-      '.btn-primary',
-      '.btn-secondary',
-      ".social-links a[aria-label='GitHub']",
-    ].join(', ');
+    const mark = (root) => {
+      if (root.matches?.(SELECTOR)) root.classList.add('cursor-glow');
+      root.querySelectorAll?.(SELECTOR).forEach((el) => el.classList.add('cursor-glow'));
+    };
+    mark(document.body);
 
-    const elements = document.querySelectorAll(selector);
+    const mutations = new MutationObserver((records) => {
+      records.forEach((r) => r.addedNodes.forEach((n) => n.nodeType === 1 && mark(n)));
+    });
+    mutations.observe(document.body, { childList: true, subtree: true });
 
-    const handlers = [];
+    let active = new Set();
 
-    elements.forEach((el) => {
-      el.classList.add('cursor-glow');
+    const onMove = (event) => {
+      if (event.pointerType === 'touch') return;
 
-      const onMove = (event) => {
-        const rect = el.getBoundingClientRect();
+      const next = new Set();
+      let el = event.target instanceof Element ? event.target.closest(SELECTOR) : null;
+      while (el) {
+        next.add(el);
+        el = el.parentElement ? el.parentElement.closest(SELECTOR) : null;
+      }
+
+      active.forEach((prev) => {
+        if (!next.has(prev)) prev.classList.remove('is-glow-active');
+      });
+
+      next.forEach((target) => {
+        const rect = target.getBoundingClientRect();
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;
-        el.style.setProperty('--glow-x', `${x}px`);
-        el.style.setProperty('--glow-y', `${y}px`);
+        const rx = x / Math.max(rect.width, 1);
+        const ry = y / Math.max(rect.height, 1);
+        target.style.setProperty('--glow-x', `${x}px`);
+        target.style.setProperty('--glow-y', `${y}px`);
 
-        if (
-          el.matches(
-            ".project-tech span, .skill-tags span, .project-card > a, .social-links a[aria-label='GitHub']"
-          )
-        ) {
-          const hue = Math.round(
-            ((x / Math.max(rect.width, 1)) * 320 +
-              (y / Math.max(rect.height, 1)) * 40) %
-              360
-          );
-          el.style.setProperty('--chip-hue', `${hue}`);
+        if (target.matches(CHIPS)) {
+          target.style.setProperty('--chip-hue', `${Math.round((rx * 320 + ry * 40) % 360)}`);
+        } else if (target.matches(BUTTONS)) {
+          target.style.setProperty('--chip-hue', `${Math.round(210 + rx * 70)}`);
         }
+        target.classList.add('is-glow-active');
+      });
 
-        if (el.matches('.btn-primary, .btn-secondary')) {
-          const hue = Math.round(210 + (x / Math.max(rect.width, 1)) * 70);
-          el.style.setProperty('--chip-hue', `${hue}`);
-        }
+      active = next;
+    };
 
-        el.classList.add('is-glow-active');
-      };
+    const clear = () => {
+      active.forEach((el) => el.classList.remove('is-glow-active'));
+      active = new Set();
+    };
 
-      const onLeave = () => {
-        el.classList.remove('is-glow-active');
-      };
-
-      el.addEventListener('mousemove', onMove);
-      el.addEventListener('mouseleave', onLeave);
-      handlers.push({ el, onMove, onLeave });
-    });
+    document.addEventListener('pointermove', onMove, { passive: true });
+    document.documentElement.addEventListener('mouseleave', clear);
+    window.addEventListener('blur', clear);
 
     return () => {
-      handlers.forEach(({ el, onMove, onLeave }) => {
-        el.removeEventListener('mousemove', onMove);
-        el.removeEventListener('mouseleave', onLeave);
-      });
+      mutations.disconnect();
+      document.removeEventListener('pointermove', onMove);
+      document.documentElement.removeEventListener('mouseleave', clear);
+      window.removeEventListener('blur', clear);
     };
-  });
-  // No deps array → runs after every render to catch newly-rendered elements
+  }, []);
 }
