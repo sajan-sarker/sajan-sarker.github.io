@@ -9,7 +9,6 @@
   "social": [
     { "label": "Facebook",   "href": "https://facebook.com/sajan.k.sarker",      "icon": "fab fa-facebook" },
     { "label": "Instagram",  "href": "https://instagram.com/sajan_sarker",        "icon": "fab fa-instagram" },
-    { "label": "Twitter",    "href": "https://twitter.com/sajan_sarker3",         "icon": "fab fa-x-twitter" },
     { "label": "LinkedIn",   "href": "https://linkedin.com/in/sajan-sarker",      "icon": "fab fa-linkedin" },
     { "label": "GitHub",     "href": "https://github.com/sajan-sarker",           "icon": "fab fa-github" },
     { "label": "TryHackMe",  "href": "https://tryhackme.com/p/sajan.k.sarker",   "icon": "fa-solid fa-shield-halved" },
@@ -21,7 +20,7 @@
   ],
   "about": {
     "paragraphs": [
-      "I'm a Computer Science and Engineering graduate with internship experience in AI research and fintech, with a growing interest in Artificial Intelligence and Cybersecurity, particularly at their intersection. Currently contributing to research on multi-agent systems for secure microservice code generation, vulnerability detection, and remediation, while gaining industry experience working with data and AI models in the fintech domain.",
+      "I'm a Computer Science and Engineering graduate with internship experience in AI research and fintech, with a growing interest in Artificial Intelligence and Cybersecurity, particularly at their intersection. Through academic research, technical projects, and industry experience, I'm continuously exploring how emerging AI technologies can address complex challenges in cybersecurity, software engineering, and intelligent automation.",
       "I'm passionate about building intelligent, secure systems and exploring applications of Machine Learning and Large Language Models (LLMs) in real-world scenarios. Currently expanding my knowledge in AI-driven security, Automation System, and Agentic systems through hands-on practice and online learning."
     ]
   },
@@ -188,10 +187,7 @@
             "Python",
             "Java",
             "C/C++",
-            "JavaScript",
-            "PHP",
             "SQL",
-            "Cypher",
             "HTML/CSS"
           ]
         }
@@ -320,7 +316,7 @@
   "activities": [
     {
       "title": "Google Cloud Gen AI Academy APAC Edition",
-      "organization": "Hack2Skill $\times$ Google Cloud",
+      "organization": "Hack2Skill x Google Cloud",
       "period": "January 2026 – September 2026",
       "bullets": [
         "Participated in all three cohorts of the APAC GenAI Academy Learning Journey, gaining exposure to Generative AI concepts, tools, and practical applications."
@@ -355,6 +351,11 @@
     }
   ],
   "certifications": [
+    {
+      "title": "CC Certified in Cybersecurity (CC)",
+      "img": "/img/CC-Certified-in-Cybersecurity-(CC).jpg",
+      "credentialUrl": "https://github.com/sajan-sarker/sajan-sarker.github.io/blob/main/public/img/CC-Certified-in-Cybersecurity-(CC).jpg?raw=true"
+    },
     {
       "title": "Pre Security Learning Path",
       "img": "/img/THM-Pre Security Certificate.jpg",
@@ -419,6 +420,13 @@
     "location": "Uttara, Dhaka, Bangladesh"
   },
   "footer": {
-    "text": "© 2026 Sajan Kumer Sarker. All rights reserved."
+    "text": "© 2026 Sajan Kumer Sarker. All rights reserved.",
+    "quotes": [
+      { "text": "The best way to predict the future is to invent it.", "author": "Alan Kay" },
+      { "text": "Security is a process, not a product.", "author": "Bruce Schneier" },
+      { "text": "Simplicity is prerequisite for reliability.", "author": "Edsger W. Dijkstra" },
+      { "text": "We can only see a short distance ahead, but we can see plenty there that needs to be done.", "author": "Alan Turing" },
+      { "text": "Stay hungry, stay foolish.", "author": "Steve Jobs" }
+    ]
   }
 }
